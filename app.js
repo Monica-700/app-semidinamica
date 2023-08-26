@@ -24,3 +24,8 @@ app.get('*', (req, res) => {
   //res s utiliza para responder a la petición del usuario
   res.sendFile(__dirname + "/public/404.html");
 })
+//se necesita activar el puerto para el webserver
+app.listen(port,() => {
+    console.log('webserver activo en el puerto ${port}')
+});
+

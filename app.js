@@ -1,7 +1,7 @@
 //importar os paquetes como el express para  crear un web server en un entorno local.
 const express = require('express');
 const app = express();
-const port = 9596;
+const port = 9596; 
 
 //mostrar contenido de la carpeta public
 app.use(express.static('public'));
@@ -26,6 +26,6 @@ app.get('*', (req, res) => {
 })
 //se necesita activar el puerto para el webserver
 app.listen(port,() => {
-    console.log('webserver activo en el puerto ${port}')
+    console.log ('webserver activo en el puerto ${port}');
 });
 
